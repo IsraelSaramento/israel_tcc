@@ -22,11 +22,9 @@ services:
     config:
       php: .lando/config/php.ini
   node:
-    type: 'node:10'
+    type: node
     globals:
       gulp-cli: latest
-  database:
-    type: 'mariadb:10.4'
 tooling:
   node:
     service: node
