@@ -1,0 +1,21 @@
+name: israel_tcc
+recipe: drupal10
+config:
+  webroot: .
+  php: '8.1'
+  framework: drupal10
+  site: israel_tcc
+  id: f263d325-408a-4f30-92be-1e3903ae5baf
+  xdebug: true
+  index: false
+  cache: false
+  edge: false
+services:
+  appserver:
+    xdebug: true
+    overrides:
+      environment:
+        # Support debugging Drush with XDEBUG.
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando
+        DRUSH_OPTIONS_URI: "https://israel_tcc.lndo.site"
