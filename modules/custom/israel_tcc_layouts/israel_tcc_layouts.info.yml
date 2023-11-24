@@ -1,0 +1,8 @@
+name: Israel TCC Layouts
+type: module
+description: Custom layouts for Israel TCC.
+package: Israel TCC - Custom Modules
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - layout_discovery

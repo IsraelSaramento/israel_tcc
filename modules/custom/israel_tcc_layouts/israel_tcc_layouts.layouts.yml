@@ -1,0 +1,498 @@
+# One column
+layout_one_col:
+  label: '1 Column'
+  path: layouts/one_col
+  template: layout--one-col
+  category: 'Custom'
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
+# 2 columns 50/50
+layout_two_col:
+  label: '2 Column'
+  path: layouts/two_col_50_50
+  template: layout--two-col-50-50
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
+
+# 2 columns 50/50 no header/footer
+layout_two_col_no_header_footer:
+  label: '2 Column no header/footer'
+  path: layouts/two_col_50_50_no_header_footer
+  template: layout--two-col-50-50-no-header-footer
+  category: 'Custom'
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+# 2 columns 33/66
+layout_two_col_33_66:
+  label: '2 Column 33/66'
+  path: layouts/two_col_33_66
+  template: layout--two-col-33-66
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
+
+# 2 columns 66/33
+layout_two_col_66_33:
+  label: '2 Column 66/33'
+  path: layouts/two_col_66_33
+  template: layout--two-col-66-33
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
+
+# 2 columns 25/75
+layout_two_col_25_75:
+  label: '2 Column 25/75'
+  path: layouts/two_col_25_75
+  template: layout--two-col-25-75
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, second, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
+
+# 2 columns 75/25
+layout_two_col_75_25:
+  label: '2 Column 75/25'
+  path: layouts/two_col_75_25
+  template: layout--two-col-75-25
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, first, first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
+
+# 2 + 2 + 1 Column
+layout_two_two_one_column:
+  label: '2 + 2 + 1 Column'
+  path: layouts/two_two_one_col
+  template: layout--two-two-one-col
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second]
+    - [third, fourth]
+    - [empty_left, fifth, fifth, empty_right]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    bottom:
+      label: Bottom
+
+# 2 + 2 + 2 + 2 Column
+layout_two_column_stack:
+  label: '2 Column Stack'
+  path: layouts/two_col_stack
+  template: layout--two-col-stack
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second]
+    - [third, fourth]
+    - [fifth, sixth]
+    - [seventh, eighth]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    sixth:
+      label: Sixth
+    seventh:
+      label: Seventh
+    eighth:
+      label: Eighth
+    bottom:
+      label: Bottom
+
+# 3 columns 33/33/33
+layout_three_col_33_33_33:
+  label: '3 Column 33/33/33'
+  path: layouts/three_col_33_33_33
+  template: layout--three-col-33-33-33
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    bottom:
+      label: Bottom
+
+# 3 columns 33/33/33 no header/footer
+layout_three_col_33_33_33_no_header_footer:
+  label: '3 Column 33/33/33 no header/footer'
+  path: layouts/three_col_33_33_33_no_header_footer
+  template: layout--three-col-33-33-33-no-header-footer
+  category: 'Custom'
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+# 3 + 1 Column
+layout_three_plus_one_column:
+  label: '3 + 1 Column'
+  path: layouts/three_plus_one_col
+  template: layout--three--plus-one-col
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [empty_left, fourth, empty_right]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    bottom:
+      label: Bottom
+
+# 3 + 2 Column
+layout_three_plus_two_column:
+  label: '3 + 2 Column'
+  path: layouts/three_plus_two_col
+  template: layout--three--plus-two-col
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [fourth, fifth]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    bottom:
+      label: Bottom
+
+# 3 + 3 + 1 Column
+layout_three_three_one_column:
+  label: '3 + 3 + 1 Column'
+  path: layouts/three_three_one_col
+  template: layout--three--three-one-col
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [fourth, fifth, sixth]
+    - [empty_left, seventh, empty_right]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    sixth:
+      label: Sixth
+    seventh:
+      label: Seventh
+    bottom:
+      label: Bottom
+
+# 3 + 3 + 2 Column
+layout_three_three_two_column:
+  label: '3 + 3 + 2 Column'
+  path: layouts/three_three_two_col
+  template: layout--three--three-two-col
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [fourth, fifth, sixth]
+    - [seventh, eighth]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    sixth:
+      label: Sixth
+    seventh:
+      label: Seventh
+    eighth:
+      label: Eighth
+    bottom:
+      label: Bottom
+
+# 3 + 3 + 3 + 3 Column
+layout_three_column_stack:
+  label: '3 Column Stack'
+  path: layouts/three_col_stack
+  template: layout--three-col-stack
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [fourth, fifth, sixth]
+    - [seventh, eighth, nine]
+    - [ten, eleven, twelve]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    sixth:
+      label: Sixth
+    seventh:
+      label: Seventh
+    eighth:
+      label: Eighth
+    nine:
+      label: Nine
+    ten:
+      label: Ten
+    eleven:
+      label: Eleven
+    twelve:
+      label: Twelve
+    bottom:
+      label: Bottom
+
+# 4 Columns 25/25/25/25
+layout_four_col:
+  label: '4 Column 25/25/25/25'
+  path: layouts/four_col
+  template: layout--four-col
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [first, second, third, fourth]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    bottom:
+      label: Bottom
+
+# 4 Columns 25/25/25/25 no header/footer
+layout_four_col_no_header_footer:
+  label: '4 Column 25/25/25/25 no header/footer'
+  path: layouts/four_col_no_header_footer
+  template: layout--four-col-no-header-footer
+  category: 'Custom'
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+
+# 4 Column up to 6 row
+layoutt_four_column_stack:
+  label: '4 Column Stack'
+  path: layouts/four_col_stack
+  template: layout--four-col-stack
+  category: 'Custom'
+  icon_map:
+    - [top]
+    - [row1col1, row1col2, row1col3, row1col4]
+    - [row2col1, row2col2, row2col3, row2col4]
+    - [row3col1, row3col2, row3col3, row3col4]
+    - [row4col1, row4col2, row4col3, row4col4]
+    - [row5col1, row5col2, row5col3, row5col4]
+    - [row6col1, row6col2, row6col3, row6col4]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    row1col1:
+      label: row1col1
+    row1col2:
+      label: row1col2
+    row1col3:
+      label: row1col3
+    row1col4:
+      label: row1col4
+    row2col1:
+      label: row2col1
+    row2col2:
+      label: row2col2
+    row2col3:
+      label: row2col3
+    row2col4:
+      label: row2col4
+    row3col1:
+      label: row3col1
+    row3col2:
+      label: row3col2
+    row3col3:
+      label: row3col3
+    row3col4:
+      label: row3col4
+    row4col1:
+      label: row4col1
+    row4col2:
+      label: row4col2
+    row4col3:
+      label: row4col3
+    row4col4:
+      label: row4col4
+    row5col1:
+      label: row5col1
+    row5col2:
+      label: row5col2
+    row5col3:
+      label: row5col3
+    row5col4:
+      label: row5col4
+    row6col1:
+      label: row6col1
+    row6col2:
+      label: row6col2
+    row6col3:
+      label: row6col3
+    row6col4:
+      label: row6col4
+    bottom:
+      label: Bottom

@@ -32,3 +32,25 @@ alert_close:
     - core/drupal
     - core/jquery
     - core/once
+
+slick:
+  version: 1.8.1
+  css:
+    theme:
+      libraries/slick/css/slick.css: { }
+      libraries/slick/css/slick-theme.css: { }
+  js:
+    libraries/slick/js/slick.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal
+
+israel-tcc:
+  js:
+    js/israel_tcc.js: { }
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal
+    - zurb_foundation/slick

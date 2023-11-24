@@ -1,3 +1,20 @@
+.layout-region__content {
+  width: 120%;
+
+  .layout__region {
+    display: flex;
+    flex-direction: row;
+
+    .layout__region {
+      width: 100%;
+    }
+
+    .layout__region.medium-4 {
+      width: 25%;
+    }
+  }
+}
+
 .lp-builder {
   min-height: 30px;
   position: relative;
@@ -37,6 +54,7 @@
   outline-color: transparent;
   transition: all .15s linear;
   position: relative;
+  padding: 0 20px;
 }
 .lp-builder:not(.is-navigating) .js-lpb-component:hover,
 .lp-builder:not(.is-navigating) .js-lpb-component:focus-within {

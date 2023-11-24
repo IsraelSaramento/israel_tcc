@@ -1,0 +1,50 @@
+{%
+  set classes = [
+    'grid-container',
+    'layout',
+    'layout--threecol-33-33-33',
+  ]
+%}
+{%
+  set col_classes = [
+    'cell',
+    'medium-6',
+    'large-4',
+    'layout__region',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.top %}
+      <div {{ region_attributes.top.addClass('layout__region', 'layout__region--top') }}>
+        {{ content.top }}
+      </div>
+    {% endif %}
+
+    <div class='grid-x grid-margin-half layout__region'>
+      {% if content.first %}
+        <div {{ region_attributes.first.addClass(col_classes, 'layout__region--first') }}>
+          {{ content.first }}
+        </div>
+      {% endif %}
+
+      {% if content.second %}
+        <div {{ region_attributes.second.addClass(col_classes, 'layout__region--second') }}>
+          {{ content.second }}
+        </div>
+      {% endif %}
+
+      {% if content.third %}
+        <div {{ region_attributes.third.addClass(col_classes, 'layout__region--third') }}>
+          {{ content.third }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if content.bottom %}
+      <div {{ region_attributes.bottom.addClass('layout__region', 'layout__region--bottom') }}>
+        {{ content.bottom }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,182 @@
+{%
+  set classes = [
+  'grid-container',
+  'layout',
+  'layout--four-col-stack',
+]
+%}
+{%
+  set col_classes = [
+    'cell',
+    'medium-6',
+    'large-3',
+    'layout__region',
+]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.top %}
+      <div {{ region_attributes.top.addClass('layout__region', 'layout__region--top') }}>
+        {{ content.top }}
+      </div>
+    {% endif %}
+
+    <div class='grid-x grid-margin-half layout__region'>
+      {# ROW 1 #}
+      {% if content.row1col1 %}
+        <div {{ region_attributes.row1col1.addClass(col_classes, 'layout__region--row1col1') }}>
+          {{ content.row1col1 }}
+        </div>
+      {% endif %}
+
+      {% if content.row1col2 %}
+        <div {{ region_attributes.row1col2.addClass(col_classes, 'layout__region--row1col2') }}>
+          {{ content.row1col2 }}
+        </div>
+      {% endif %}
+
+      {% if content.row1col3 %}
+        <div {{ region_attributes.row1col3.addClass(col_classes, 'layout__region--row1col3') }}>
+          {{ content.row1col3 }}
+        </div>
+      {% endif %}
+
+      {% if content.row1col4 %}
+        <div {{ region_attributes.row1col4.addClass(col_classes, 'layout__region--row1col4') }}>
+          {{ content.row1col4 }}
+        </div>
+      {% endif %}
+
+      {# ROW 2 #}
+      {% if content.row2col1 %}
+        <div {{ region_attributes.row2col1.addClass(col_classes, 'layout__region--row2col1') }}>
+          {{ content.row2col1 }}
+        </div>
+      {% endif %}
+
+      {% if content.row2col2 %}
+        <div {{ region_attributes.row2col2.addClass(col_classes, 'layout__region--row2col2') }}>
+          {{ content.row2col2 }}
+        </div>
+      {% endif %}
+
+      {% if content.row2col3 %}
+        <div {{ region_attributes.row2col3.addClass(col_classes, 'layout__region--row2col3') }}>
+          {{ content.row2col3 }}
+        </div>
+      {% endif %}
+
+      {% if content.row2col4 %}
+        <div {{ region_attributes.row2col4.addClass(col_classes, 'layout__region--row2col4') }}>
+          {{ content.row2col4 }}
+        </div>
+      {% endif %}
+
+      {# ROW 3 #}
+      {% if content.row3col1 %}
+        <div {{ region_attributes.row3col1.addClass(col_classes, 'layout__region--row3col1') }}>
+          {{ content.row3col1 }}
+        </div>
+      {% endif %}
+
+      {% if content.row3col2 %}
+        <div {{ region_attributes.row3col2.addClass(col_classes, 'layout__region--row3col2') }}>
+          {{ content.row3col2 }}
+        </div>
+      {% endif %}
+
+      {% if content.row3col3 %}
+        <div {{ region_attributes.row3col3.addClass(col_classes, 'layout__region--row3col3') }}>
+          {{ content.row3col3 }}
+        </div>
+      {% endif %}
+
+      {% if content.row3col3 %}
+        <div {{ region_attributes.row3col3.addClass(col_classes, 'layout__region--row3col3') }}>
+          {{ content.row3col3 }}
+        </div>
+      {% endif %}
+
+      {# ROW 4 #}
+      {% if content.row4col1 %}
+        <div {{ region_attributes.row4col1.addClass(col_classes, 'layout__region--row4col1') }}>
+          {{ content.row4col1 }}
+        </div>
+      {% endif %}
+
+      {% if content.row4col2 %}
+        <div {{ region_attributes.row4col2.addClass(col_classes, 'layout__region--row4col2') }}>
+          {{ content.row4col2 }}
+        </div>
+      {% endif %}
+
+      {% if content.row4col3 %}
+        <div {{ region_attributes.row4col3.addClass(col_classes, 'layout__region--row4col3') }}>
+          {{ content.row4col3 }}
+        </div>
+      {% endif %}
+
+      {% if content.row4col4 %}
+        <div {{ region_attributes.row4col4.addClass(col_classes, 'layout__region--row4col4') }}>
+          {{ content.row4col4 }}
+        </div>
+      {% endif %}
+
+      {# ROW 5 #}
+      {% if content.row5col1 %}
+        <div {{ region_attributes.row5col1.addClass(col_classes, 'layout__region--row5col1') }}>
+          {{ content.row5col1 }}
+        </div>
+      {% endif %}
+
+      {% if content.row5col2 %}
+        <div {{ region_attributes.row5col2.addClass(col_classes, 'layout__region--row5col2') }}>
+          {{ content.row5col2 }}
+        </div>
+      {% endif %}
+
+      {% if content.row5col3 %}
+        <div {{ region_attributes.row5col3.addClass(col_classes, 'layout__region--row5col3') }}>
+          {{ content.row5col3 }}
+        </div>
+      {% endif %}
+
+      {% if content.row5col4 %}
+        <div {{ region_attributes.row5col4.addClass(col_classes, 'layout__region--row5col4') }}>
+          {{ content.row5col4 }}
+        </div>
+      {% endif %}
+
+      {# ROW 6 #}
+      {% if content.row6col1 %}
+        <div {{ region_attributes.row6col1.addClass(col_classes, 'layout__region--row6col1') }}>
+          {{ content.row6col1 }}
+        </div>
+      {% endif %}
+
+      {% if content.row6col2 %}
+        <div {{ region_attributes.row6col2.addClass(col_classes, 'layout__region--row6col2') }}>
+          {{ content.row6col2 }}
+        </div>
+      {% endif %}
+
+      {% if content.row6col3 %}
+        <div {{ region_attributes.row6col3.addClass(col_classes, 'layout__region--row6col3') }}>
+          {{ content.row6col3 }}
+        </div>
+      {% endif %}
+
+      {% if content.row6col4 %}
+        <div {{ region_attributes.row6col4.addClass(col_classes, 'layout__region--row6col4') }}>
+          {{ content.row6col4 }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if content.bottom %}
+      <div {{ region_attributes.bottom.addClass('layout__region', 'layout__region--bottom') }}>
+        {{ content.bottom }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
